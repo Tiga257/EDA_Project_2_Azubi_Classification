@@ -53,30 +53,38 @@ TotalCharges: Total amount charged to the customer.
 PhoneService, MultipleLines, InternetService (DSL, Fiber optic, No internet). Additional services like OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, and StreamingMovies.
 
 ##### Target Variable:
+
 Churn: Indicates if the customer left the company (Yes or No).
 
 Installation and Setup
 To set up the project environment, follow these instructions:
 
 ##### Clone the Repository:
+
 bash git clone https://github.com/Tiga257/Telco-Churn-Classification.git
 
 ##### Navigate to the Project Directory:
+
 bash cd Telco-Churn-Classification
 
 ##### Set Up a Virtual Environment:
+
 bash python -m venv env source env/bin/activate # On Windows: env\Scripts\activate
 
 ##### Install the Dependencies:
+
 bash pip install -r requirements.txt
 
 ##### Key dependencies include:
+
 pandas, numpy: Data manipulation and numerical computation. scikit-learn, xgboost: Machine learning and model building. matplotlib, seaborn: Data visualization. imbalanced-learn: Handling imbalanced data.
 
 ##### Launch Jupyter Notebook:
+
 bash jupyter notebook Open the provided notebook file EDA_Telco_Churn_Classification_Project_Prince_Okyere_Boadu.ipynb to explore the project.
 
-Project Structure
+#### Project Structure
+
 The structure of the repository is as follows:
 
 
@@ -94,11 +102,11 @@ Telco-Churn-Classification/
 Exploratory Data Analysis (EDA)
 EDA involves examining the dataset to uncover patterns and insights, including:
 
-##### Data Cleaning:
+#### Data Cleaning:
 
 Handling missing values in TotalCharges, which are replaced with median values or removed.
 
-##### Data Visualization:
+#### Data Visualization:
 
 Use histograms, bar plots, and count plots to understand the distribution of categorical and numerical variables. Analyze correlations using heatmaps to identify relationships between features and the target variable. Examine churn rates across different groups (e.g., customers with different contract types, payment methods).
 
@@ -106,8 +114,9 @@ Use histograms, bar plots, and count plots to understand the distribution of cat
 
 Perform tests like chi-square tests for categorical features to determine the statistical significance of churn-related factors. Identify skewness in numerical features, applying transformations if necessary.
 
-Data Preprocessing
-##### Steps to prepare the data for modeling include:
+#### Data Preprocessing
+
+Steps to prepare the data for modeling include:
 
 Handling Missing Values: Impute missing values in TotalCharges based on customer tenure and monthly charges.
 
@@ -136,18 +145,20 @@ Decision Trees: Individual trees used for interpretability.
 
 LightGBM and CatBoost: Gradient boosting models designed for better performance and speed.
 
-##### Model Training and Evaluation
+#### Model Training and Evaluation
+
 Splitting the Data:
 Use an 80-20 split for training and testing sets.
 Apply Stratified K-Fold cross-validation to ensure that each fold contains the same proportion of classes.
 
-##### Evaluation Metrics:
+#### Evaluation Metrics:
+
 Accuracy: The percentage of correctly classified instances.
 Precision, Recall, F1-Score: Measure the effectiveness in identifying the churned customers.
 ROC-AUC Score: Evaluate the ability of the model to discriminate between churned and non-churned customers.
 Confusion Matrix: Analyze the distribution of true positives, false positives, true negatives, and false negatives.
 
-##### Hyperparameter Tuning
+#### Hyperparameter Tuning
 
 Random Forest Hyperparameter Tuning:
 Parameters such as n_estimators, max_depth, min_samples_split, and min_samples_leaf were tuned using GridSearchCV.
@@ -168,12 +179,14 @@ Better handling of class imbalance due to built-in techniques like scale_pos_wei
 Feature Importance: Contract, tenure, and MonthlyCharges were consistently important across models.
 Misclassification Analysis: Examined false positives and false negatives to understand model limitations and areas for improvement.
 
-##### Conclusion
+#### Conclusion
+
 The project successfully identified key factors influencing churn and used machine learning models to predict it with high accuracy.
 Random Forest and XGBoost models proved to be the most effective due to their robustness and performance.
 Insights from the models can guide targeted interventions to reduce customer churn.
 
-##### Future Work
+#### Future Work
+
 Expand Data Sources: Incorporate additional data such as customer service interactions and satisfaction scores.
 
 Deploy the Model: Integrate the model into a real-time dashboard for churn prediction.
