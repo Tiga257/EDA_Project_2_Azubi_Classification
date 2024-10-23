@@ -81,15 +81,15 @@ The structure of the repository is as follows:
 
 
 Telco-Churn-Classification/
-├── data/                          # Directory for datasets
-│   ├── Telco-Churn-Dataset.xlsx   # Original dataset file
-│   └── Preprocessed_Data.csv      # Preprocessed data file (if available)
-├── notebooks/                     # Jupyter notebooks for EDA and modeling
-│   └── EDA_Telco_Churn_Classification_Project_Prince_Okyere_Boadu.ipynb
-├── models/                        # Trained models storage (optional)
-├── reports/                       # Reports and analysis results
-├── requirements.txt               # Python package dependencies
-└── README.md                      # Project documentation
+* ├── data/                          # Directory for datasets
+* │   ├── Telco-Churn-Dataset.xlsx   # Original dataset file
+* │   └── Preprocessed_Data.csv      # Preprocessed data file (if available)
+* ├── notebooks/                     # Jupyter notebooks for EDA and modeling
+* │   └── EDA_Telco_Churn_Classification_Project_Prince_Okyere_Boadu.ipynb
+* ├── models/                        # Trained models storage (optional)
+* ├── reports/                       # Reports and analysis results
+* ├── requirements.txt               # Python package dependencies
+* └── README.md                      # Project documentation
      
 Exploratory Data Analysis (EDA)
 EDA involves examining the dataset to uncover patterns and insights, including:
