@@ -1,6 +1,8 @@
 
-Telco Churn Classification Project
-Table of Contents
+# Telco Churn Classification Project
+
+### Table of Contents
+
 Project Overview
 Table of Contents
 Dataset Description
@@ -18,16 +20,20 @@ Technical Challenges and Solutions
 Contributors
 License
 Acknowledgements
-Project Overview
+
+## Project Overview
+
 The Telco Churn Classification Project seeks to predict customer churn for a telecommunications company using various machine learning techniques. Churn prediction is critical as retaining existing customers is often more cost-effective than acquiring new ones. This project explores different algorithms to identify high-risk customers and provide actionable insights for improving customer retention strategies.
 
-The project encompasses:
+#### The project encompasses:
+
 A thorough analysis of the dataset to identify key factors contributing to churn. Preprocessing steps for data cleaning, transformation, and feature engineering. Implementation of multiple machine learning algorithms with a focus on Random Forest and XGBoost, which yielded the best performance. Model evaluation using metrics such as accuracy, ROC-AUC, precision, recall, and F1-score. Recommendations based on findings to help the business reduce churn.
 
 Dataset Description
 The dataset comprises customer information, such as demographics, account details, and usage patterns. It has 21 features, with the target variable being Churn, indicating whether a customer left the service.
 
 Key Features:
+
 1. Customer Demographics:
 Gender: Male or Female.
 SeniorCitizen: Binary indicator (0 for non-senior, 1 for senior).
