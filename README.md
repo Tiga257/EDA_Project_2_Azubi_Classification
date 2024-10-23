@@ -3,8 +3,8 @@
 
 ### Table of Contents
 
-Project Overview
-Table of Contents
+- Project Overview
+- Table of Contents
 Dataset Description
 Installation and Setup
 Project Structure
