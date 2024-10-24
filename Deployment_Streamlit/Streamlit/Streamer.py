@@ -1,4 +1,7 @@
+
 import streamlit as st
+
+from PIL import Image
 
 def home():
     st.write("Classification Project")
@@ -45,6 +48,14 @@ def home():
 
     st.markdown("""[Watch a Demo](https://www.youtube.com/watch?v=fMM54UG4a8A&list=PPSV)
                 """)
+# adding an image/ way 1
+    st.image(r"C:\Users\PRINCE\OneDrive\Desktop\1\GGRKS004.JPG")
+
+# way 2
+# install pillow -- from PIL import Image
+
+image = image.open(r"C:\Users\PRINCE\OneDrive\Desktop\1\GGRKS004.JPG")
+st.image(image)        
 
 if __name__ == "__main__":
     home()
